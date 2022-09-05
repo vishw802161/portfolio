@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #fff;
 }
 header {
   width: 100vw;
@@ -65,6 +66,55 @@ header .nav .mobile-button h1 {
   background: #fcf;
   font-size: 50px;
   font-weight: 900;
+}
+.content {
+  width: 100%;
+  height: 80vh;
+  padding: 0 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.content h1{
+  font-size: 5rem;
+}
+.content h1 span{
+  color: red;
+}
+.content form {
+  width: 400px;
+  height: 50px;
+  position: relative;
+  border-radius: 50px;
+  background: #000;
+}
+.content form input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 50px;
+  padding: 0 0 0 20px;
+  border: 2px solid red;
+}
+.content form button {
+  position: absolute;
+  top: 10%;
+  right: 5px;
+  height: 80%;
+  width: 25%;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: red;
+  display: none;
+}
+.content form input:not(:placeholder-shown) + button {
+  display: block;
 }
 @media only screen and (max-width: 600px) {
   body {
