@@ -122,8 +122,16 @@ header .nav .mobile-button h1 {
 }
 footer {
   position: absolute;
-  right: 50px;
-  bottom: 50px;
+  bottom: 30px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .social_icons {
+  width: min-content;
+  height: 100%;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -131,11 +139,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-footer .social_icons {
-  width: 100%;
-  height: 100%;
-  display: flex;
   gap: 20px;
 }
 footer .social_icons .links {
@@ -206,6 +209,8 @@ footer .social_icons .links:hover i {
   }
   footer {
     position: unset;
+    flex-direction: column-reverse;
+    gap: 20px;
     margin-bottom: 50px;
   }
 }
